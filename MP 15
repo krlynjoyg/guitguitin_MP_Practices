@@ -1,0 +1,32 @@
+package mp15;
+
+import java.util.Scanner;
+
+public class Mp15 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        
+        String text = scan.nextLine();
+        text = text.toLowerCase();
+        
+        String reversed = "";
+        
+        for(int i = text.length() - 1; i >= 0; i--){
+            reversed = reversed + text.charAt(i);
+        }
+        
+            if (text.equals(reversed)) {
+                System.out.println("Palindrome");
+            } else {
+                System.out.println("Not Palindrome");
+            }
+        }
+        
+
+    
+    
+}
