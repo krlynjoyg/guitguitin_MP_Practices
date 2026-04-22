@@ -1,0 +1,37 @@
+package mp14;
+
+import java.util.Scanner;
+
+public class Mp14 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        
+        int[] values = new int[6];
+        int sum = 0;
+        
+        for (int i = 0; i<6; i++) {
+            values[i] = scan.nextInt();
+            sum = sum + values[i];
+            
+            if (values[i] >= 85) {
+                System.out.println("FAST");
+            } else {
+                System.out.println("SLOW");
+            }
+        }
+        
+        int average = sum / 6;
+        System.out.println(average);
+
+            if (average >= 85) {
+                System.out.println("FAST");
+            } else {
+                System.out.println("SLOW");
+            }
+    }
+    
+}
